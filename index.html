@@ -9,31 +9,95 @@
     <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
   </head>
   <body>
-    <div class="navbar flex justify-between items-center p-4">
+    <div
+      class="navbar flex justify-between items-center px-2 py-1 laptop:px-4 max-w-[95vw] mx-auto"
+    >
       <div class="flex justify-center items-center laptop:order-2">
         <div class="hamburger inline-block p-4 cursor-pointer laptop:hidden">
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search laptop:hidden">Search</div>
+        <div class="search laptop:hidden w-5 mr-4">
+          <img src="./images/search.svg" alt="" />
+        </div>
       </div>
 
       <div class="logo flex text-center laptop:order-1">
-        Microsoft
+        <div class="p-4 w-36"><img src="./images/RE1Mu3b.png" alt="" /></div>
         <div
-          class="features absolute w-fit laptop:w-auto laptop:static bg-gray-200 laptop:bg-white laptop:translate-x-0 inset-0 laptop:flex mx-4 space-x-2 -translate-x-96"
+          class="features absolute w-fit laptop:w-auto laptop:static bg-gray-200 laptop:bg-white laptop:translate-x-0 inset-0 laptop:flex items-center mx-4 space-x-2 -translate-x-96"
         >
-          <div class="fitems">Home</div>
-          <div class="fitems">Microsoft 365</div>
-          <div class="fitems">Windows</div>
-          <div class="fitems">Xbox & Games</div>
-          <div class="fitems">Professional software</div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Microsoft 365
+          </div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Windows
+          </div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Teams
+          </div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Surface
+          </div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Xbox
+          </div>
+          <div
+            class="fitems hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3"
+          >
+            Support
+          </div>
         </div>
       </div>
       <div class="cart text-center laptop:order-3 flex">
-        <div class="search hidden laptop:block">All Microsoft Searchicon</div>
-        <div>Cart Account</div>
+        <div
+          class="search my-auto laptop:flex hidden hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px]"
+        >
+          All Microsoft
+          <img
+            class="w-3 h-3 mx-2 my-auto"
+            src="./images/down-chevron.png"
+            alt=""
+          />
+        </div>
+        <div class="flex">
+          <p
+            class="hidden desktop:block hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] pl-3 my-auto"
+          >
+            Search
+          </p>
+          <img
+            class="hidden laptop:block search w-5 mx-2"
+            src="./images/search.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="flex">
+          <p
+            class="hidden desktop:block hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] pl-3 my-auto"
+          >
+            Cart
+          </p>
+          <img class="w-5 mx-4" src="./images/cart.svg" alt="" />
+          <p
+            class="hidden desktop:block hover:underline decoration-2 hover:underline-offset-4 cursor-pointer text-[14px] px-3 my-auto"
+          >
+            Sign in
+          </p>
+          <img class="w-10" src="./images/download.svg" alt="" />
+        </div>
       </div>
     </div>
 
@@ -58,10 +122,10 @@
           class="hidden laptop:block"
         />
         <!-- <img
-          src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif"
-          alt=""
-          class="hidden desktop:block"
-        /> -->
+        src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif"
+        alt=""
+        class="hidden desktop:block"
+      /> -->
       </div>
       <div
         class="right flex flex-col p-7 justify-start shadow-md shadow-slate-300 pc:my-auto pc:bg-[#f2f2f2] pc:shadow-none laptop:mx-4 laptop:-mt-5 pc:mx-0 bg-white"
@@ -80,5 +144,217 @@
         </span>
       </div>
     </div>
+
+    <div class="control-slider flex mx-auto w-fit my-7">
+      <img class="toggleLeft w-10 mx-10" src="./images/left-arrow.png" alt="" />
+      <div
+        class="toggleLeftCircle border-[2px] border-black bg-black w-3 h-3 rounded-full mx-3 my-auto"
+      ></div>
+      <div
+        class="toggleRightCircle border-[2px] border-black w-3 h-3 rounded-full mx-3 my-auto"
+      ></div>
+      <img
+        class="toggleRight w-10 mx-10"
+        src="./images/right-arrow.png"
+        alt=""
+      />
+    </div>
+
+    <div class="promo my-10 max-w-[95vw] mx-auto">
+      <ul class="list-none flex flex-wrap w-fit mx-auto justify-center">
+        <li class="w-fit mx-4 my-4">
+          <img
+            class="mx-auto mb-2"
+            src="./images/icon-LL-Windows-Logo-80x80.webp"
+            alt=""
+          />
+          <a
+            class="font-semibold text-base text-[#0067b8] underline tracking-wide"
+            href="#"
+            >Choose your Microsoft 365</a
+          >
+        </li>
+        <li class="w-fit mx-4 my-4">
+          <img
+            class="mx-auto mb-2"
+            src="./images/icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80.webp"
+            alt=""
+          />
+          <a
+            class="font-semibold text-base text-[#0067b8] underline tracking-wide"
+            href="#"
+            >Explore Surface devices</a
+          >
+        </li>
+        <li class="w-fit mx-4 my-4">
+          <img
+            class="mx-auto mb-2"
+            src="./images/icon-LL-Xbox-Logo-80x80.webp"
+            alt=""
+          />
+          <a
+            class="font-semibold text-base text-[#0067b8] underline tracking-wide"
+            href="#"
+            >Buy Xbox games</a
+          >
+        </li>
+        <li class="w-fit mx-4 my-4">
+          <img
+            class="mx-auto mb-2"
+            src="./images/icon-LL-Windows-Logo-80x80.webp"
+            alt=""
+          />
+          <a
+            class="font-semibold text-base text-[#0067b8] underline tracking-wide"
+            href="#"
+            >Get Windows 11</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="products my-10 max-w-[95vw] mx-auto">
+      <ul
+        class="grid grid-cols-1 list-none tablet:grid-cols-2 tablet:gap-8 pc:grid-cols-4 pc:gap-8"
+      >
+        <li>
+          <img
+            class="py-14"
+            src="./images/Content-Card-Surface-Laptop-5-M1-Platinum-01-1 (1).avif"
+            alt=""
+          />
+          <h2 class="font-semibold py-2 text-3xl tracking-wide">
+            Surface Laptop 5
+          </h2>
+          <p class="text-lg">
+            Sophisticated style and multitasking speed powered by 12th Gen
+            Intel® Core, with Windows 11.
+          </p>
+          <a
+            class="flex hover:underline hover:underline-offset-4 decoration-2 text-[#0067b8] text-lg font-semibold pt-5"
+            href="#"
+            >Learn more
+            <img
+              class="mx-3 my-auto w-4 h-4"
+              src="./images/right-arrow.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <img
+            class="py-14"
+            src="./images/Content-Card-PC-SMB-OneNote.webp"
+            alt=""
+          />
+          <h2 class="font-semibold py-2 text-3xl tracking-wide">OneNote</h2>
+          <p class="text-lg">Organise your notes and your life</p>
+          <a
+            class="flex hover:underline hover:underline-offset-4 decoration-2 text-[#0067b8] text-lg font-semibold pt-5"
+            href="#"
+            >Learn more
+            <img
+              class="mx-3 my-auto w-4 h-4"
+              src="./images/right-arrow.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <img
+            class="py-14"
+            src="./images/Content-Card-Game-Call-of-Duty-Modern-Warfare-2.webp"
+            alt=""
+          />
+          <h2 class="font-semibold py-2 text-3xl tracking-wide">
+            Call of Duty®: Modern Warfare® II
+          </h2>
+          <p class="text-lg">
+            Welcome to the new era of Call of Duty. Squad up and fight alongside
+            the iconic operators of Task Force 141 with state-of-the-art
+            gameplay, advanced AI, and more.
+          </p>
+          <a
+            class="flex hover:underline hover:underline-offset-4 decoration-2 text-[#0067b8] text-lg font-semibold pt-5"
+            href="#"
+            >Get it now
+            <img
+              class="mx-3 my-auto w-4 h-4"
+              src="./images/right-arrow.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <img
+            class="py-14"
+            src="./images/gldn-CP-Windows11-GlobalLaunch.avif"
+            alt=""
+          />
+          <h2 class="font-semibold py-2 text-3xl tracking-wide">
+            Designed for life today – and tomorrow
+          </h2>
+          <p class="text-lg">
+            The next-generation of games. Your goals. Friends and family.
+            Windows 11 was made to bring you closer to everything you love.
+          </p>
+          <a
+            class="flex hover:underline hover:underline-offset-4 decoration-2 text-[#0067b8] text-lg font-semibold pt-5"
+            href="#"
+            >See if your pc is ready
+            <img
+              class="mx-3 my-auto w-4 h-4"
+              src="./images/right-arrow.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="Ms-edge flex flex-col pc:flex-row cursor-pointer max-w-[95vw] mx-auto"
+    >
+      <div class="left">
+        <img
+          src="./images/gldn-MSFT-hero-Edge_VP1-539x440.avif"
+          alt=""
+          class="tablet:hidden m-0 w-fit"
+        />
+        <img
+          src="./images/gldn-MSFT-hero-Edge_VP2-859x540.avif"
+          alt=""
+          class="hidden tablet:block laptop:hidden"
+        />
+        <img
+          src="./images/gldn-MSFT-hero-Edge_VP5-1596x600.avif"
+          alt=""
+          class="hidden laptop:block pc:hidden"
+        />
+        <!-- <img
+        src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif"
+        alt=""
+        class="hidden desktop:block"
+      /> -->
+      </div>
+      <div
+        class="pc:bg-[url('./images/gldn-MSFT-hero-Edge_VP5-1596x600.avif')] w-full h-[574px] pc:bg-no-repeat"
+      >
+        <div
+          class="right flex flex-col p-7 justify-start shadow-sm shadow-slate-500 pc:w-[37%] laptop:mx-4 laptop:-mt-5 pc:ml-16 h-fit pc:my-28 pc:py-14 pc:px-14 bg-white"
+        >
+          <h1 class="text-2xl laptop:text-4xl font-semibold my-1 pc:py-4">
+            Microsoft Edge
+          </h1>
+          <p class="my-1 pc:text-lg pc:py-2">
+            World-class performance with more privacy, more productivity and
+            more value while you browse
+          </p>
+          <span
+            class="px-3 py-1 my-1 bg-[#0067b8] font-semibold text-lg text-white w-fit pc:px-5 pc:py-2 pc-text-xl"
+          >
+            Download now
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
