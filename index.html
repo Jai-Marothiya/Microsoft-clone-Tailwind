@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
+  </head>
+  <body>
+    <div class="navbar flex justify-between items-center p-4">
+      <div class="flex justify-center items-center laptop:order-2">
+        <div class="hamburger inline-block p-4 cursor-pointer laptop:hidden">
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        </div>
+        <div class="search laptop:hidden">Search</div>
+      </div>
+
+      <div class="logo flex text-center laptop:order-1">
+        Microsoft
+        <div
+          class="features absolute w-fit laptop:w-auto laptop:static bg-gray-200 laptop:bg-white laptop:translate-x-0 inset-0 laptop:flex mx-4 space-x-2 -translate-x-96"
+        >
+          <div class="fitems">Home</div>
+          <div class="fitems">Microsoft 365</div>
+          <div class="fitems">Windows</div>
+          <div class="fitems">Xbox & Games</div>
+          <div class="fitems">Professional software</div>
+        </div>
+      </div>
+      <div class="cart text-center laptop:order-3 flex">
+        <div class="search hidden laptop:block">All Microsoft Searchicon</div>
+        <div>Cart Account</div>
+      </div>
+    </div>
+
+    <!-- bg-[#f2f2f2]  -->
+    <div
+      class="slider flex flex-col pc:flex-row pc:bg-[#f2f2f2] cursor-pointer"
+    >
+      <div class="left">
+        <img
+          src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP1-539x440.avif"
+          alt=""
+          class="tablet:hidden m-0 w-fit"
+        />
+        <img
+          src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP2-859x540.avif"
+          alt=""
+          class="hidden tablet:block laptop:hidden"
+        />
+        <img
+          src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP3-1083x600.avif"
+          alt=""
+          class="hidden laptop:block"
+        />
+        <!-- <img
+          src="./images/Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif"
+          alt=""
+          class="hidden desktop:block"
+        /> -->
+      </div>
+      <div
+        class="right flex flex-col p-7 justify-start shadow-md shadow-slate-300 pc:my-auto pc:bg-[#f2f2f2] pc:shadow-none laptop:mx-4 laptop:-mt-5 pc:mx-0 bg-white"
+      >
+        <span class="px-4 py-1 bg-[#ffb900] font-semibold text-lg my-1 w-fit">
+          New
+        </span>
+        <h1 class="text-4xl font-semibold my-1">Surface Pro 9</h1>
+        <p class="my-1">
+          Tablet versatility and laptop power — all in one ultra-portable device
+        </p>
+        <span
+          class="px-5 py-2 my-1 bg-[#0067b8] font-bold text-lg text-white w-fit"
+        >
+          Learn more
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
